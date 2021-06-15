@@ -1,13 +1,15 @@
-# @SAP/repository-template
-Default templates of SAP's repositories. Provides template files including LICENSE, .reuse/dep5, Code of Conduct, etc... All repositories on github.com/SAP will be created based on this template.
+# simple-java-maven-app
 
-# Containing files
+This repository is for the
+[Build a Java app with Maven](https://jenkins.io/doc/tutorials/build-a-java-app-with-maven/)
+tutorial in the [Jenkins User Documentation](https://jenkins.io/doc/).
 
-1. The LICENSE file:
-In the most cases, the license of SAP's projects is `Apache 2.0`.
+The repository contains a simple Java application which outputs the string
+"Hello world!" and is accompanied by a couple of unit tests to check that the
+main application works as expected. The results of these tests are saved to a
+JUnit XML report.
 
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your open source project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (This file):
-Please edit this file as it is the primary description file for your project.
+The `jenkins` directory contains an example of the `Jenkinsfile` (i.e. Pipeline)
+you'll be creating yourself during the tutorial and the `scripts` subdirectory
+contains a shell script with commands that are executed when Jenkins processes
+the "Deliver" stage of your Pipeline.
